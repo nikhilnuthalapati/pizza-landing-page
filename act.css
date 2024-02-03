@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    background-color: rgb(87, 90, 90);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.pic{
+    width: 60px;
+    height: 60px;
+}
+/*div1*/
+.card{
+    top: 15px;
+    left: 450px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 #dde0e5 inset,0 0 20px 10px #799be7;
+}
+.card .circle::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#799be7;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.card:hover .circle::before{
+    background: #0065c3;
+    clip-path: circle(400px at center);
+}
+.card img{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height:225Px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card:hover img{
+    left:78%;
+    height: 400px;
+}
+.card .cont{
+    position: relative;
+    left: 20%;
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.card:hover .cont{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.card .cont h1{
+    color: white;
+    text-transform: uppercase;
+    font-family:'italic';
+    font-weight:bolder;
+    font-size: 2em;
+    line-height:2px;
+    margin-bottom: 45px;
+}
+.card .cont h3{
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+.card .cont p{
+    color: #fff;
+}
+
+a{
+    display:none;
+    color:rgb(213, 7, 11);
+    position: relative;
+    padding: 10px 20px;
+    background: #0c9cc0;
+    margin-top: 10px;
+    font-weight: 700;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.card:hover a{
+    display: inline-block;
+}
+/*div2*/
+.card1{
+    top: 470px;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+.card1 .circle{
+    position: absolute;
+    top: 155;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0px #dde0e5 inset,0 0 20px 10px #e0ee63;
+}
+.card1 .circle::before{
+    content: "";
+    position: absolute;
+    top: 155;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #dae905;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.card1:hover .circle::before{
+    background: #e4a309;
+    clip-path: circle(400px at center);
+}
+.card1 .cont{
+    position: relative;
+    left: 20%;
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.card1:hover .cont{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.card1 .cont h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'italic';
+    font-weight:900;
+    font-size: 15px;
+    line-height:2px;
+    margin-bottom: 45px;
+}
+.card1 .cont h3{
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+.card1 .cont p{
+    color: #fff;
+}
+
+a{
+    display:none;
+    color:rgb(213, 7, 11);
+    position: relative;
+    padding: 10px 20px;
+    background: #239ee6;
+    margin-top: 10px;
+    font-weight: 700;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.card1:hover a{
+    display: inline-block;
+}
+.card1 img{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height:225Px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card1:hover img{
+    left:78%;
+    height: 350px;
+}
+/*div3*/
+.card2{
+    top: 920px;
+    right: 450px;
+    align-items: center;
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    transition: 0.5s;
+}
+.card2 .circle{
+    position: absolute;
+    top: 155;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0px #dde0e5 inset,0 0 20px 10px #ee5724;
+}
+.card2 .circle::before{
+    content: "";
+    position: absolute;
+    top: 155;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ee5724;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.card2:hover .circle::before{
+    background: #db5151;
+    clip-path: circle(400px at center);
+}
+.card2 .cont{
+    position: relative;
+    left: 20%;
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.card2:hover .cont{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.card2 .cont h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'italic';
+    font-weight:900;
+    font-size: 20px;
+    line-height:2px;
+    margin-bottom: 45px;
+}
+.card2 .cont h3{
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+.card2 .cont p{
+    color: #fff;
+}
+a{
+    display:none;
+    color:rgb(213, 7, 11);
+    position: relative;
+    padding: 10px 20px;
+    background: #239ee6;
+    margin-top: 10px;
+    font-weight: 700;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.card2:hover a{
+    display: inline-block;
+}
+.card2 img{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height:225Px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card2:hover img{
+    left:78%;
+    height: 350px;
+}
+
